@@ -1,0 +1,76 @@
+.blog-banner{
+    background-image: url('img/about-banner.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+}
+@media (max-width:1000px){
+    .grid-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+}
+@media (max-width:744px){
+    .grid-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+}
+}
+.read-more1{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: brown;
+    color: white;
+}
+.blog-img img{
+    border-radius: 10px;
+}
+.blog-img{
+    border-radius: 10px;
+    width:100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+.blog-img:hover img{
+    transform: scale(1.2);
+}
+.blog-hvr a{
+    text-decoration: none;
+    color:brown;
+    font-size: 20px;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.blog-hvr{
+   position:absolute; 
+   top:0;
+   left:0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   transform: scale(0);
+   transform-origin: center;
+   transition: all 0.7s ease; 
+}
+.blog-card:hover .blog-hvr{
+   transform: scale(1.3);
+} 

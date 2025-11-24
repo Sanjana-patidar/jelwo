@@ -1,0 +1,42 @@
+.modal-dialog{
+    max-width:600px !important;
+}
+.modal-body{
+    position: inherit !important;
+}
+.modal-header{
+    border-bottom: none !important;
+}
+.search-bar input{
+    width:100%;
+    padding: 10px;
+    border-radius: 50px;
+    border:1px solid grey;
+    outline: none;
+}
+.subs-btn{
+    padding: 11px 30px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.subrel{
+    position: relative;
+}
+.subs{
+    position: absolute;
+    top:-11px;
+    right: 0;
+}
+@media (max-width:476px){
+    .subs{
+    position:inherit;
+    margin-top: 10px;
+}
+}
+.subs-btn{
+    width: 100%;
+    margin-top: 10px;
+}

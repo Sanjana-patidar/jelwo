@@ -1,0 +1,41 @@
+.main-relative{
+    position: relative;
+}
+.main-absolute{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:50%;
+    transform: translateY(50%);
+}
+.btn{
+    border-radius: 40px;
+    padding: 6px 20px;
+}
+.main-absolute h1 {
+    font-size: 70px;
+}
+.main-absolute p {
+    font-size: 40px;
+}
+@media (max-width:776px) {
+    .main-absolute h1 {
+    font-size: 40px;
+}
+.main-absolute p {
+    font-size: 30px;
+}
+}
+@media (max-width:509px) {
+    .main-absolute h1 {
+    font-size: 25px;
+}
+.main-absolute p {
+    font-size: 10px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+}

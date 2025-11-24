@@ -1,0 +1,30 @@
+.brand-card{
+    border: 1px solid grey;
+    padding: 30px 60px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-card:hover{
+    background-color: rgb(122, 25, 25);
+}
+.brand-hover{
+    border:1px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+    transform: scale(0);
+    transform-origin:center;
+    position: absolute;
+    transition: all 0.9s ease;
+}
+.brand-card:hover .brand-hover{
+      display: block;
+      transform: scale(1);
+}
+.brand-card:hover .brand-img{
+      visibility: hidden;
+}

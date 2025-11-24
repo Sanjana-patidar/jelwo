@@ -1,0 +1,27 @@
+.whishlist{
+    background-image: url("/img/about-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whish-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+@media (max-width:1000px){
+    .whish-grid{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media (max-width:800px){
+    .whish-grid{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width:523px){
+    .whish-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+}

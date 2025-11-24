@@ -1,0 +1,39 @@
+.tradition-bottom{
+    position: relative;
+}
+.tradition-content{
+    position: absolute;
+    bottom: 0;
+}
+.top{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.bottom{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.video{
+    border-radius: 8px;
+}
+.play-btn{
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.play-btn i{
+    color: brown;
+}
+.traditional{
+    position: relative;
+    transition: all 0.5s ease;
+}
+.traditional:hover{
+    transform:scaleY(1.02)
+}
+.video-rel{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-13%);
+}

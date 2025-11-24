@@ -1,0 +1,232 @@
+.showmore{
+    background-image: url('./img/about-banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input[type="checkbox"]{
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.categories-list{
+    margin-top: 15px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+.categories-list li{
+    padding: 5px 0px;
+    padding-right: 10px;
+}
+.css-13vpke-MuiSlider-root{
+    color: black !important;
+}
+.color-option input[type="checkbox"]{
+    display: none;
+}
+.circle{
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+    margin-right: 3px;
+    position: relative;
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+.beige{
+    background-color: beige;
+}
+.bronze{
+    background-color: brown;
+}
+.silver{
+    background-color: silver;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.gold1{
+    background-color: gold;
+}
+.color-option input[type="checkbox"]:checked + .circle::before {
+     content:'\2713';
+     position: absolute;
+     left:5px;
+}
+.color-option:hover .circle::before  {
+      content:'\2713';
+      position: absolute;
+      left:5px;
+}
+.colorcheckbox{
+    height: 230px;
+    overflow: auto;
+}
+.side{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.side img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.7s ease;
+}
+.side img:hover{
+   transform: scale(1.1);
+}
+.coll{
+    border-radius: 10px;
+    margin-top: 6px;
+}
+select{
+    width: 170px;
+    border-radius: 5px;
+    outline: none;
+}
+.list span:hover{
+  color: brown;
+}
+.front-img{
+    display: block;
+}
+.back-img{
+    display: none;
+}
+.img-content:hover .front-img{
+    display: none;
+}
+.img-content:hover .back-img{
+    display: block;
+}
+.design-card{
+    border:1px solid grey;
+    border-radius: 8px;
+    background-color: white;
+}
+.img-content  img{
+    border-radius:8px;
+}
+.gold{
+    color:orange;
+}
+.btn-add{
+    padding: 9px 5px;
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.btn-add:hover{
+    background-color: brown;
+    color: white;
+}
+
+.btn-add a{
+    color: white;
+}
+.pre-inc{
+    border:1px solid black;
+    padding: 2px 10px;
+    border-radius:5px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.img-content{
+    position: relative;
+}
+.offer{
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: translate(50%,50%);
+}
+.heart-icon a{
+   color:black;
+   background-color: white;
+   border: 1px solid grey;
+   padding: 10px;
+   border-radius: 50%;
+}
+.heart-icon{
+    position: absolute;
+    top:8%;
+    right:0;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
+    visibility: hidden;
+}
+.design-card:hover  .heart-icon{
+      transform: translateX(-40%);
+      visibility: visible;
+}
+.grid-layout{
+    display: grid  ;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+@media (max-width:617px){
+    .grid-layout{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+}
+}
+@media (max-width:380px){
+    .grid-layout{
+    display: grid ;
+    grid-template-columns: repeat(1,1fr);
+    gap:15px;
+}
+}
+
+.nav-tabs{
+    border:none;
+    padding: 0px;
+}
+.net i{
+    color: black;
+}
+.net i:hover{
+    color: brown;
+}
+ul{
+    padding: 0px !important;
+}
+.header{
+    background-color: none !important;
+    padding: 10px !important;
+}
+.cross{
+    text-align: end;
+    padding-right: 30px;
+   
+}
+.icon-1{
+    border:1px solid grey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color:transparent;
+    transition: all 0.5s ease;
+}
+.icon-1 i{
+    color:black;
+}
+.icon-1:hover{
+    background-color: brown;
+}
+.reset{
+    cursor: pointer;
+}

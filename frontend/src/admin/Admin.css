@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.admin-layout{
+  display: flex;
+}
+.sidebar{
+  position: fixed;
+  top: 60px; /* below topbar */
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 60px);
+  background: #1f2937;
+  color: white;
+  padding-top: 20px;
+}
+.admin-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(22, 48, 85, 0.2);
+  z-index: 1000;
+}
+.content{
+   margin-top: 60px; 
+  margin-left: 220px; 
+  padding: 20px;
+  background: #f3f4f6;
+  overflow-y: auto;
+}
+.icon{
+  font-size: 20px !important;
+  vertical-align: center;
+  padding-right: 2px;
+}
+.sidebar{
+  background-color: black;
+  color:white;
+  text-align: start;
+  padding-left: 20px;
+}
+.sidebar1{
+   background-color: black;
+  color:white;
+  text-align: start;
+  padding-left: 20px;
+}
+.sidebar-menu li{
+  padding: 10px 0px;
+  list-style: none;
+}
+/* admin header */
+
+.admin-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.content{
+  width:100%;
+}
+.humber{
+  display: none;
+}
+.admin-offcanvas .offcanvas-body{
+  background-color: black;
+  color: white;
+}
+.admin-offcanvas  a{
+  color: white !important;
+  text-decoration: none;
+}
+.offcanvas{
+  width:60% !important;
+} 
+@media (max-width:608px){
+  .humber{
+    display: block;
+  }
+  .sidebar{
+    display: none;
+  }
+  .content{
+   margin-top: 60px; 
+   margin-left: 0px; 
+   padding: 20px;
+   background: #f3f4f6;
+   overflow-y: auto;
+}
+}
+.countcontainer{
+  padding: 34px 54px;
+  margin-bottom: 30px;
+}
+
+
+.counts{
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+@media (max-width:913px){
+  .counts{
+  flex-wrap: wrap;
+}
+}
+.countbox1{
+    background-color: #8884d8;
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.countbox2{
+    background-color: #82ca9d;
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.countbox3{
+    background-color: #ffc658;
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counts i{
+  font-size: 50px;
+}
+.number{
+  border:none;
+  padding: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white;
+}
+.active-link {
+  background: #ffffff20;
+  padding: 8px 5px;
+  border-radius: 6px;
+  color: #ab3d4a !important;
+  font-weight: bold;
+  text-decoration: none;
+}

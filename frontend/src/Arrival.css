@@ -1,0 +1,89 @@
+.design{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    
+}
+.btn1{
+    background-color: white;
+    border: 1px solid white;
+    color: brown;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 20px 0px;
+    font-weight:500;
+}
+.btn1:hover{
+    background-color:transparent;
+    color:white;
+}
+.arrival-top{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.arrival-top:hover .design{
+  transform: scale(1.1);
+}
+
+.arrival-bottom{
+ position: absolute;
+ bottom:0%;
+ left:50%;
+ transform: translate(-50%,-30%);
+}
+.btn-m{
+    background-color: brown;
+    border: 1px solid brown;
+    color: white;
+    padding: 10px 25px;
+    transition: all 0.5s ease-in-out;
+}
+.btn-m:hover{
+    background-color:black;
+    color: white;
+    border: none;
+    
+}
+.momentum-top{
+    position: relative;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     border-radius: 20px;
+}
+.momentum-top:hover .design{
+  transform: scale(1.1);
+}
+.momentum-bottom{
+    width:47%;
+    position: absolute;
+    top:0%;
+    right:0%;
+    transform: translate(-10%,50%);
+}
+@media (max-width:700px) {
+    .momentum-bottom{
+    width:77%;
+     transform: translate(-5%,50%);
+}
+}
+@media (max-width:600px) {
+    .momentum-bottom{
+    width:100%;
+    top:0;
+    left:0;
+    transform: translate(0%,10%);
+    padding:  0px 20px ;
+     
+}
+}
+.order li{
+    font-size: 25px;
+}
+.order li:hover{
+   color:brown;
+}

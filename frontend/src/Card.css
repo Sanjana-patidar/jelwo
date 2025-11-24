@@ -1,0 +1,76 @@
+
+.front-img{
+    display: block;
+}
+.back-img{
+    display: none;
+}
+.img-content:hover .front-img{
+    display: none;
+}
+.img-content:hover .back-img{
+    display: block;
+}
+.design-card{
+    border:1px solid grey;
+    border-radius: 8px;
+    background-color: white;
+}
+.img-content  img{
+    border-radius:8px;
+}
+.gold{
+    color:orange;
+}
+.btn-add{
+    padding: 9px 5px;
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.btn-add:hover{
+    background-color: brown;
+    color: white;
+}
+
+.btn-add a{
+    color: white;
+}
+.pre-inc{
+    border:1px solid black;
+    padding: 2px 10px;
+    border-radius:5px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.img-content{
+    position: relative;
+}
+.offer{
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: translate(50%,50%);
+}
+.heart-icon a{
+   color:black;
+   background-color: white;
+   border: 1px solid grey;
+   padding: 10px;
+   border-radius: 50%;
+}
+.heart-icon{
+    position: absolute;
+    top:8%;
+    right:0;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
+    visibility: hidden;
+}
+.design-card:hover  .heart-icon{
+      transform: translateX(-40%);
+      visibility: visible;
+}

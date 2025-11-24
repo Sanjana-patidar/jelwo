@@ -1,0 +1,27 @@
+.video-img{
+    border-radius: 5px;
+}
+.btn4{
+    width:100%;
+    padding: 7px;
+    border-radius: 50px;
+    border: none;
+    color: brown;
+    transition: all 0.5s ease;
+}
+.btn4:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.video1{
+    position: relative;
+}
+.video-abs{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.video-auto{
+    border-radius: 7px;
+}

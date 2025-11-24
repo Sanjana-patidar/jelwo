@@ -1,0 +1,254 @@
+
+.front-img{
+    display: block;
+}
+.back-img{
+    display: none;
+}
+.img-content:hover .front-img{
+    display: none;
+}
+.img-content:hover .back-img{
+    display: block;
+}
+.design-card{
+    border:1px solid grey;
+    border-radius: 8px;
+    background-color: white;
+}
+.img-content  img{
+    border-radius:8px;
+}
+.gold{
+    color:orange;
+}
+.btn-add{
+    padding: 9px 5px;
+    border-radius: 50px;
+    background-color: black;
+    color:white;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.btn-add:hover{
+    background-color: brown;
+    color: white;
+}
+
+.btn-add a{
+    color: white;
+}
+.pre-inc{
+    border:1px solid black;
+    padding: 2px 10px;
+    border-radius:5px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.img-content{
+    position: relative;
+}
+.offer{
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: translate(50%,50%);
+}
+.heart-icon a{
+   color:white;
+   background-color:green !important;
+   border: 1px solid grey;
+   padding: 10px;
+   border-radius: 50%;
+}
+.heart-icon i{
+ color:white;
+}
+.heart-icon{
+    position: absolute;
+    top:8%;
+    right:0;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
+    visibility: hidden;
+}
+
+.design-card{
+    box-shadow:
+  6px 6px 12px #b8b9be,
+  -6px -6px 12px #fff;
+}
+
+.design-card:hover  .heart-icon{
+      transform: translateX(-40%);
+      visibility: visible;
+}
+
+@media (max-width:800px) {
+    .heart-icon{
+        position: inherit !important;
+        top:0 !important;
+        right:0 !important;
+        transform: none !important;
+        transition: none !important;
+        visibility: visible !important;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: -40px;
+    }
+    
+}
+.offcanvas-header{
+    background-color: none !important;
+}
+.offcanvas.offcanvas-bottom{
+    right:150px !important;
+    left:150px !important;
+    height: 100vw !important;
+}
+@media (max-width:1000px){
+    .offcanvas.offcanvas-bottom{
+    right:0px !important;
+    left:0px !important;
+    height: 100vw !important;
+}
+}
+.sale{
+    background-color: green;
+    color:white;
+    padding: 2px  5px;
+    border: none;
+    border-radius: 5px;
+}
+.circle-1{
+    height: 10px;
+    width: 10px;
+    padding: 1px 12px;
+    border-radius: 50%;
+    background-color: green;
+    border: none;
+}
+.count-btn{
+    border:1px solid black;
+    display: inline;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+.counter{
+    border: none;
+    background: none;
+}
+.add:hover{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+}
+.add1{
+    background-color: white;
+    padding: 12px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.add1:hover{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+}
+.mySwiper3{
+    width: 79% !important;
+}
+.mySwiper1{
+    width: 79%!important;
+}
+@media (max-width:776px){
+    .mySwiper3{
+    width: 90% !important;
+}
+.mySwiper1{
+    width: 90%!important;
+}
+}
+.mySwiper1{
+    margin-top: 17px !important;
+}
+.swiper-wrapper{
+    margin-top: 20px;
+}
+.prev{
+    transform: translate(-130%, 0%);
+    visibility: hidden;
+    transition: all 0.5s ease;
+    transform-origin: left;
+}
+.next{
+  transform: translate(130%, 0%);
+ visibility: hidden;
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+.mySwiper3:hover .prev{
+    visibility: visible;
+    transform: translate(0%, 0%);
+}
+.mySwiper3:hover .next{
+    visibility: visible;
+    transform: translate(0%, 0%);
+}
+.cross1{
+     width: 30px;
+     right:20px;
+     top:10px;
+     position: absolute;
+     border: none;
+     background: none;
+     z-index: 5;
+}
+ .next{
+        border:1px solid black;
+        padding: 10px 20px;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        color:black;
+        box-shadow: 0 5px 6px grey;
+    }
+    .prev{
+        border:1px solid black;
+        padding: 10px 20px;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+         box-shadow: 0 5px 6px grey;
+        color:black;
+    }
+    .next i{
+        color: black;
+    }
+    .prev i{
+        color: black;
+    }
+   .size{
+    padding: 7px 25px;
+    border-radius: 40px;
+    margin-right: 10px;
+   }
+   .set{
+    border:2px solid brown;
+    background-color: brown;
+    color:white;
+   }
+  .offcanvas.offcanvas-end{
+        width:550px !important;
+   }
+   .off-top{
+    background-color: #f5eced;
+   }
+   .close{
+    border: none;
+    background-color: transparent;
+   }
+   .offcanvas-body::-webkit-scrollbar{
+    display: none !important;
+   }

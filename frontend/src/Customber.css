@@ -1,0 +1,54 @@
+.user-img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.user{
+    background-color:#f5eced;
+    border-radius: 10px;
+}
+.search-bar{
+    padding: 10px 20px;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+}
+.search-bar::placeholder{
+    color: black;
+    font-size: 20px;
+}
+.sub{
+    padding: 7px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(139, 206, 183);
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.search-top{
+    position: relative;
+}
+.search-bottom{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.search-banner{
+    background-image: url('img/search-back.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.banner{
+    padding: 0px 25px !important;
+}
+@media (max-width:400px){
+    .search-bottom{
+        position: inherit;
+        margin: 10px 0px;
+    }
+    .sub{
+        width: 100%;
+    }
+}
