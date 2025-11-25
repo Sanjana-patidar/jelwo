@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './AdminCategories.css';
 import axios from 'axios';
 
-const API = "http://localhost:5000/api/jewelry";
+const API = "https://jelwo.onrender.com/api/jewelry";
 
 const AdminCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -109,7 +109,7 @@ const AdminCategories = () => {
             <div>
               <img
                 className="w-100 border rounded-5 bg-white"
-                src={`http://localhost:5000/uploads/${cat.image}`}
+                src={`https://jelwo.onrender.com/uploads/${cat.image}`}
                 alt={cat.name}
               />
             </div>

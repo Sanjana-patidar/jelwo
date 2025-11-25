@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./AdminProduct.css";
 import axios from "axios";
-const API = "http://localhost:5000/api/products";
+const API = "https://jelwo.onrender.com/api/products";
 const AdminProduct = () => {
   const [products, setProducts] = useState([]);
   const [form, setForm] = useState({
@@ -152,7 +152,7 @@ const AdminProduct = () => {
           <div className="product-card" key={p._id}>
             <img
               className=""
-              src={`http://localhost:5000/uploads/${p.frontImg}`}
+              src={`https://jelwo.onrender.com/uploads/${p.frontImg}`}
               alt={p.frontImg}
             />
             <h3>{p.title}</h3>
