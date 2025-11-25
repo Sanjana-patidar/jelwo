@@ -183,3 +183,9 @@
 #exampleModal1 .modal-dialog{
     justify-content: center;
 }
+@media (min-width:1350px){
+   .dropdown-menu{
+    width:100vw !important;
+   }
+   
+}

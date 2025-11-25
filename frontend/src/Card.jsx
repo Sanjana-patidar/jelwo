@@ -37,7 +37,7 @@ const Card = () => {
   // Fetch products from backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products") //  your API URL
+      .get("https://jelwo.onrender.com/api/products") //  your API URL
       .then((res) => {
         setLuxuries(res.data); // assuming your backend returns array
       })
@@ -112,8 +112,8 @@ const cartItem = selectedProduct
                       }
                     }}
                   >
-                    {[`http://localhost:5000/uploads/${selectedProduct.frontImg}`,
-  `http://localhost:5000/uploads/${selectedProduct.backImg}`]
+                    {[`https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
+  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`]
                       .filter(Boolean)
                       .flatMap((img) => [img, img])
                       .map((img, idx) => (
@@ -142,8 +142,8 @@ const cartItem = selectedProduct
                     modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper1"
                   >
-                    {[`http://localhost:5000/uploads/${selectedProduct.frontImg}`,
-  `http://localhost:5000/uploads/${selectedProduct.backImg}`]
+                    {[`https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
+  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`]
                       .filter(Boolean)
                       .flatMap((img) => [img, img])
                       .map((img, idx) => (
@@ -277,12 +277,12 @@ const cartItem = selectedProduct
                       <div className="img-content">
                         <img
                           className="w-100 front-img"
-                          src={`http://localhost:5000/uploads/${luxurie.frontImg}`}
+                          src={`https://jelwo.onrender.com/uploads/${luxurie.frontImg}`}
                           alt=""
                         />
                         <img
                           className="w-100 back-img"
-                          src={`http://localhost:5000/uploads/${luxurie.backImg}`}
+                          src={`https://jelwo.onrender.com/uploads/${luxurie.backImg}`}
                           alt=""
                         />
                         <div className="offer text-start">

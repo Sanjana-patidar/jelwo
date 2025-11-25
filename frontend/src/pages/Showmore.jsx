@@ -91,7 +91,7 @@ const handleBuyNow = (item) => {
   //useEffect for dipaly the data from api
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://jelwo.onrender.com/api/products")
       .then((res) => {
         setProducts(res.data);
       })
@@ -631,12 +631,12 @@ const handleBuyNow = (item) => {
                           <div class="img-content">
                             <img
                               class="w-100 front-img"
-                              src={`http://localhost:5000/uploads/${product.frontImg}`}
+                              src={`https://jelwo.onrender.com/uploads/${product.frontImg}`}
                               alt=""
                             />
                             <img
                               class="w-100 back-img"
-                              src={`http://localhost:5000/uploads/${product.backImg}`}
+                              src={`https://jelwo.onrender.com/uploads/${product.backImg}`}
                               alt=""
                             />
                             <div class="offer text-start">
@@ -725,8 +725,8 @@ const handleBuyNow = (item) => {
                                         }}
                                       >
                                         {[
-                                         `http://localhost:5000/uploads/${selectedProduct.frontImg}`,
-  `http://localhost:5000/uploads/${selectedProduct.backImg}`
+                                         `https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
+  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`
                                         ]
                                           .filter(Boolean)
                                           .flatMap((img) => [img, img])
@@ -763,8 +763,8 @@ const handleBuyNow = (item) => {
                                         className="mySwiper1"
                                       >
                                         {[
-                                         `http://localhost:5000/uploads/${selectedProduct.frontImg}`,
-  `http://localhost:5000/uploads/${selectedProduct.backImg}`
+                                         `https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
+  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`
                                         ]
                                           .filter(Boolean)
                                           .flatMap((img) => [img, img])
@@ -925,12 +925,12 @@ const handleBuyNow = (item) => {
                           <div class="img-content">
                             <img
                               class=" w-100 front-img"
-                              src={`http://localhost:5000/uploads/${product.frontImg}`}
+                              src={`https://jelwo.onrender.com/uploads/${product.frontImg}`}
                               alt=""
                             />
                             <img
                               class="w-100 back-img"
-                              src={`http://localhost:5000/uploads/${product.backImg}`}
+                              src={`https://jelwo.onrender.com/uploads/${product.backImg}`}
                               alt=""
                             />
                           </div>

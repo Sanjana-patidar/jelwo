@@ -42,7 +42,7 @@ const Product = () => {
      const [count, setCount] = useState(0);
      const { id } = useParams();
       useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://jelwo.onrender.com/api/products/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data))
       .catch(err => console.error(err));
@@ -68,16 +68,16 @@ const Product = () => {
                                     className="mySwiper2"
                                 >
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.frontImg}`}/>
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.frontImg}`}/>
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.backImg}`} />
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.backImg}`} />
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.frontImg}`} />
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.frontImg}`} />
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.backImg}`} />
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.backImg}`} />
                                     </SwiperSlide>
                                     <div class="swiper-button-prev prev1 fs-5">
                                         <i class="fa-solid fa-arrow-right"></i>
@@ -97,16 +97,16 @@ const Product = () => {
                                     className="mySwiper"
                                 >
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.frontImg}`} />
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.frontImg}`} />
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                    <img src={`http://localhost:5000/uploads/${product.backImg}`} />
+                                    <img src={`https://jelwo.onrender.com/uploads/${product.backImg}`} />
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                     <img src={`http://localhost:5000/uploads/${product.frontImg}`} />
+                                     <img src={`https://jelwo.onrender.com/uploads/${product.frontImg}`} />
                                     </SwiperSlide>
                                     <SwiperSlide className='swiper-slide1'>
-                                     <img src={`http://localhost:5000/uploads/${product.backImg}`} />
+                                     <img src={`https://jelwo.onrender.com/uploads/${product.backImg}`} />
                                     </SwiperSlide>
                                 </Swiper>
                          </div>

@@ -54,7 +54,7 @@ const Cartoffacnvas = () => {
                   <div>
                     <img
                       className="w-100 rounded"
-                      src={`http://localhost:5000/uploads/${item.frontImg}`}
+                      src={`https://jelwo.onrender.com/uploads/${item.frontImg}`}
                       alt=""
                     />
                   </div>

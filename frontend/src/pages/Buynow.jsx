@@ -211,7 +211,7 @@ const Buynow = () => {
                         <div key={item._id || index} className='d-flex gap-3 flex-wrap'>
                             <div className='d-flex gap-3 flex-wrap'>
                                 <div>
-                                <img src={`http://localhost:5000/uploads/${item.frontImg}`} alt="" className='w-100 rounded img-2' />
+                                <img src={`https://jelwo.onrender.com/uploads/${item.frontImg}`} alt="" className='w-100 rounded img-2' />
                                 </div>
                                 <div>
                                     <p className='m-0'>{item.title}</p>

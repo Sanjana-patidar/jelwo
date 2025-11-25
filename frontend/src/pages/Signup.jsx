@@ -22,7 +22,7 @@ const Signup = () => {
  const onSubmit = async (data) => {
     try {
       if (isSignup) {
-        const res = await axios.post("http://localhost:5000/api/users/signup", data);
+        const res = await axios.post("https://jelwo.onrender.com/api/users/signup", data);
         setMessage(res.data.message);
       } else {
         
@@ -30,7 +30,7 @@ const Signup = () => {
           email: data.email,
           password: data.password
         };
-        const res = await axios.post("http://localhost:5000/api/users/login", loginData);
+        const res = await axios.post("https://jelwo.onrender.com/api/users/login", loginData);
         setMessage(res.data.message + " - Welcome " + res.data.user.name);
         localStorage.setItem('user', JSON.stringify(res.data.user));
         navigate('/home'); // Redirect to home page after successful login
