@@ -2,7 +2,6 @@ import express from "express";
 import upload from "../middleware/upload.js";
 import {
   createJewelry,
-  createJewelryBulk,
   getJewelries,
   getJewelryById,
   deleteJewelry,

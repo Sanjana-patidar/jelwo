@@ -14,14 +14,14 @@
 
 /* Form Styling */
 .product-form {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
 .product-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -34,13 +34,20 @@
 }
 
 .product-form button {
-  background: #000;
+  background: green;
   color: white;
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
+}
+.addbtn{
+  background-color: green;
+  color:white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
 }
 
 .product-form button:hover {

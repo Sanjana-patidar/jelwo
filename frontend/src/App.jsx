@@ -32,13 +32,6 @@ import { WishlistProvider } from "./Context/WhishlistContext";
 import { CartProvider } from "./Context/CartContext";
 import { BuynowProvider } from "./Context/BuynowContext";
 import Cartoffacnvas from "./Cartoffacnvas";
-import Adminlayout from "./admin/Adminlayout";
-import Dashboard from "./admin/Dashboard";
-import Header from "./admin/Header";
-import Sidebar from "./admin/Sidebar";
-import AdminCategories from "./admin/AdminCategories";
-import AdminProduct from "./admin/AdminProduct";
-import User from "./admin/User";
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
 
@@ -83,15 +76,6 @@ const App = () => {
                     <Route path="term" element={<Term />} />
                     <Route path="buynow" element={<Buynow />} />
                     <Route path="wishlist" element={<Whishlist />} />
-                  </Route>
-                  {/* admin routes */}
-                  <Route path="/admin" element={<Adminlayout />}>
-                    <Route index element={<Dashboard />} />
-                    <Route path="sidebar" element={<Sidebar />} />
-                    <Route path="header" element={<Header/>} />
-                    <Route path="admincategories" element={<AdminCategories />} />
-                    <Route path="adminproducts" element={<AdminProduct />} />
-                    <Route path="adminusers" element={<User/>} />
                   </Route>
                 </Routes>
               </CartProvider>

@@ -1,15 +1,5 @@
 import Jewelry from "../modal/jewelry.js";
-
 //  Add single jewelry item
-// export const createJewelry = async (req, res) => {
-//   try {
-//     const jewelry = new Jewelry(req.body);
-//     const savedItem = await jewelry.save();
-//     res.status(201).json(savedItem);
-//   } catch (err) {
-//     res.status(400).json({ message: err.message });
-//   }
-// };
 export const createJewelry = async (req, res) => {
   try {
     const newItem = new Jewelry({
@@ -24,15 +14,6 @@ export const createJewelry = async (req, res) => {
   }
 };
 
-// Add multiple jewelry items
-export const createJewelryBulk = async (req, res) => {
-  try {
-    const items = await Jewelry.insertMany(req.body);
-    res.status(201).json(items);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
-  }
-};
 
 //  Get all jewelry items
 export const getJewelries = async (req, res) => {

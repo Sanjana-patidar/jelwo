@@ -57,6 +57,11 @@
 .sidebar-menu li{
   padding: 10px 0px;
   list-style: none;
+  color: white !important;
+}
+.sidebar-menu a{
+  text-decoration: none;
+  color: white !important;
 }
 /* admin header */
 
@@ -160,10 +165,10 @@
   background-color: white;
 }
 .active-link {
-  background: #ffffff20;
-  padding: 8px 5px;
-  border-radius: 6px;
   color: #ab3d4a !important;
   font-weight: bold;
   text-decoration: none;
+}
+ul{
+  padding-left: 0px !important;
 }

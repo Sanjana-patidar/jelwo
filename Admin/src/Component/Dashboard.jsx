@@ -5,7 +5,6 @@ import axios from 'axios';
 import {
   BarChart,Cell, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from "recharts";
-import {motion} from "framer-motion"
 const Dashboard = () => {
   // state for storing data of products count, categories count, users count from backend
   const [counts, setCounts] = useState({

@@ -76,7 +76,7 @@ const Navbar = () => {
    <div class=" text-center "> <a class="navbar-brand " href="#"><img class="w-50" src="/img/logo.avif" alt=""/></a></div>
     <div class="">
         <div class=" d-flex gap-4 ">
-           <div data-bs-toggle="modal" data-bs-target="#exampleModal1" ><span className='text-danger cursor-pointer'><i class="fa-solid fa-lock"></i>Admin</span></div>
+           
            <div>
             <Link to='/' className='whish-count'><span> <i class="fa-solid fa-user-plus"></i></span></Link>
             </div>
