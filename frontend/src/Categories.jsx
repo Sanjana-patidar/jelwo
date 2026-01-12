@@ -16,7 +16,7 @@ const Categories = () => {
  useEffect(() =>{
      const fetchData =  async ()=>{
         try{
-        const res = await axios.get("https://jelwo.onrender.com/api/jewelry");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/jewelry`);
         setItem(res.data);
         }
         catch(err){
@@ -71,7 +71,7 @@ const Categories = () => {
                             <img class="w-100 back " src="img/cat-bg.avif" alt=""/>
                             <Link to='/showmore'>
                             <div class="card-content">
-                                <img  class="w-100 " src={`https://jelwo.onrender.com/uploads/${item.image}`} alt=""/>
+                                <img  class="w-100 " src={`${import.meta.env.VITE_API_IMAGE}/${item.image}`} alt=""/>
                             </div>
                             </Link>
                             <div class="fs-4"><span class="name">{item.name}</span></div>

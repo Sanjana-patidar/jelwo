@@ -13,7 +13,7 @@ const [customers, setCustomer] = useState([]);
  useEffect(() => {
   const fetchCustomers = async () => {
     try {
-      const res = await axios.get("https://jelwo.onrender.com/api/customers");
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/customers`);
       setCustomer(res.data); // res.data should be an array
     } catch (err) {
       console.log("fetching issue", err);

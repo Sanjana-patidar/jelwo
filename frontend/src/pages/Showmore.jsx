@@ -631,12 +631,12 @@ const handleBuyNow = (item) => {
                           <div class="img-content">
                             <img
                               class="w-100 front-img"
-                              src={`https://jelwo.onrender.com/uploads/${product.frontImg}`}
+                              src={`${import.meta.env.VITE_API_IMAGE}/${product.frontImg}`}
                               alt=""
                             />
                             <img
                               class="w-100 back-img"
-                              src={`https://jelwo.onrender.com/uploads/${product.backImg}`}
+                              src={`${import.meta.env.VITE_API_IMAGE}/${product.backImg}`}
                               alt=""
                             />
                             <div class="offer text-start">
@@ -679,7 +679,7 @@ const handleBuyNow = (item) => {
                             }}
                             class="btn-add w-100 mt-3"
                           >
-                            ADD TO CART
+                            Read More <i class="fa-solid fa-arrow-right"></i>
                           </button>
                         </div>
                         <div>
@@ -725,8 +725,8 @@ const handleBuyNow = (item) => {
                                         }}
                                       >
                                         {[
-                                         `https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
-  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`
+                                         `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.frontImg}`,
+  `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.backImg}`
                                         ]
                                           .filter(Boolean)
                                           .flatMap((img) => [img, img])
@@ -763,8 +763,8 @@ const handleBuyNow = (item) => {
                                         className="mySwiper1"
                                       >
                                         {[
-                                         `https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
-  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`
+                                         `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.frontImg}`,
+  `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.backImg}`
                                         ]
                                           .filter(Boolean)
                                           .flatMap((img) => [img, img])
@@ -925,12 +925,12 @@ const handleBuyNow = (item) => {
                           <div class="img-content">
                             <img
                               class=" w-100 front-img"
-                              src={`https://jelwo.onrender.com/uploads/${product.frontImg}`}
+                              src={`${import.meta.env.VITE_API_IMAGE}/${product.frontImg}`}
                               alt=""
                             />
                             <img
                               class="w-100 back-img"
-                              src={`https://jelwo.onrender.com/uploads/${product.backImg}`}
+                              src={`${import.meta.env.VITE_API_IMAGE}/${product.backImg}`}
                               alt=""
                             />
                           </div>

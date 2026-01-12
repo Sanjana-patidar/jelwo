@@ -27,12 +27,12 @@ const Whishlist = () => {
                       <div className="img-content">
                         <img
                           className="w-100 front-img"
-                          src={`https://jelwo.onrender.com/uploads/${item.frontImg}`}
+                          src={`${import.meta.env.VITE_API_IMAGE}/${item.frontImg}`}
                           alt=""
                         />
                         <img
                           className="w-100 back-img"
-                          src={`https://jelwo.onrender.com/uploads/${item.backImg}`}
+                          src={`${import.meta.env.VITE_API_IMAGE}/${item.backImg}`}
                           alt=""
                         />
                         <div className="offer text-start">

@@ -54,7 +54,7 @@ const Cartoffacnvas = () => {
                   <div>
                     <img
                       className="w-100 rounded"
-                      src={`https://jelwo.onrender.com/uploads/${item.frontImg}`}
+                      src={`${import.meta.env.VITE_API_IMAGE}/${item.frontImg}`}
                       alt=""
                     />
                   </div>

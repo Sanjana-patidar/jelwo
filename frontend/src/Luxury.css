@@ -25,7 +25,7 @@
 .btn-add{
     padding: 9px 5px;
     border-radius: 50px;
-    background-color: black;
+    background-color: brown;
     color:white;
     border: none;
     transition: all 0.5s ease-in-out;
@@ -74,11 +74,6 @@
     visibility: hidden;
 }
 
-.design-card{
-    box-shadow:
-  6px 6px 12px #b8b9be,
-  -6px -6px 12px #fff;
-}
 
 .design-card:hover  .heart-icon{
       transform: translateX(-40%);
@@ -177,16 +172,10 @@
     margin-top: 20px;
 }
 .prev{
-    transform: translate(-130%, 0%);
-    visibility: hidden;
-    transition: all 0.5s ease;
-    transform-origin: left;
+    visibility: visible;
 }
 .next{
-  transform: translate(130%, 0%);
- visibility: hidden;
-  transition: all 0.5s ease;
-  transform-origin: left;
+ visibility: visible;
 }
 .mySwiper3:hover .prev{
     visibility: visible;

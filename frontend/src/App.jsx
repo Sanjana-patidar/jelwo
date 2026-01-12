@@ -60,9 +60,8 @@ const App = () => {
               <CartProvider>
                 <Cartoffacnvas />
                 <Routes>
-                  <Route index element={<Signup />} />
                   <Route path="/" element={<Layout />}>
-                    <Route path="home" element={<Home />} />
+                    <Route index element={<Home />} />
                     <Route path="privacy" element={<Privacy />} />
                     <Route path="blog" element={<Blog />} />
                     <Route path="readmore" element={<ReadMore />} />
@@ -76,6 +75,7 @@ const App = () => {
                     <Route path="term" element={<Term />} />
                     <Route path="buynow" element={<Buynow />} />
                     <Route path="wishlist" element={<Whishlist />} />
+                    <Route path="signup" element={<Signup />} />
                   </Route>
                 </Routes>
               </CartProvider>

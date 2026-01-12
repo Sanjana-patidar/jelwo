@@ -33,7 +33,7 @@ const Navbar = () => {
   e.preventDefault();
 
   try {
-    const res = await axios.post("https://jelwo.onrender.com/api/admin/login", {
+    const res = await axios.post(`/${import.meta.env.VITE_API_URL}/admin/login`, {
       email,
       password,
     });
@@ -78,7 +78,7 @@ const Navbar = () => {
         <div class=" d-flex gap-4 ">
            
            <div>
-            <Link to='/' className='whish-count'><span> <i class="fa-solid fa-user-plus"></i></span></Link>
+            <Link to='/signup' className='whish-count'><span> <i class="fa-solid fa-user-plus"></i></span></Link>
             </div>
            <div>
             <Link to="/wishlist" className='text-decoration-none whish-count'>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <div>
                     <ul class="list-unstyled d-flex gap-3 align-items-center unorder">
                         <li class="nav-item dropdown">
-                           <Link to='/home' className='text-decoration-none '> <span >Home</span></Link>
+                           <Link to='/' className='text-decoration-none '> <span >Home</span></Link>
                              <a class="nav-link dropdown-toggle d-inline" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
                                <i class="fa-solid fa-angle-down"></i>
                             </a>
@@ -483,7 +483,7 @@ const Navbar = () => {
     <div>
       <div>
       <div class="d-flex justify-content-between border p-3 ">
-        <div><Link to='/home' className='text-decoration-none fw-bold'>Home</Link></div>
+        <div><Link to='/' className='text-decoration-none fw-bold'>Home</Link></div>
         <div onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}>

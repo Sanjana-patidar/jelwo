@@ -37,7 +37,7 @@ const Luxury = () => {
   // Fetch products from backend
   useEffect(() => {
     axios
-      .get("https://jelwo.onrender.com/api/products") //  your API URL
+      .get(`${import.meta.env.VITE_API_URL}/products`) //  your API URL
       .then((res) => {
         setLuxuries(res.data); // assuming your backend returns array
       })
@@ -117,8 +117,8 @@ const cartItem = selectedProduct
                       }
                     }}
                   >
-                    {[`https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
-  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`]
+                    {[`${import.meta.env.VITE_API_IMAGE}/${selectedProduct.frontImg}`,
+  `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.backImg}`]
                       .filter(Boolean)
                       .flatMap((img) => [img, img])
                       .map((img, idx) => (
@@ -147,8 +147,8 @@ const cartItem = selectedProduct
                     modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper1"
                   >
-                    {[`https://jelwo.onrender.com/uploads/${selectedProduct.frontImg}`,
-  `https://jelwo.onrender.com/uploads/${selectedProduct.backImg}`]
+                    {[`${import.meta.env.VITE_API_IMAGE}/${selectedProduct.frontImg}`,
+  `${import.meta.env.VITE_API_IMAGE}/${selectedProduct.backImg}`]
                       .filter(Boolean)
                       .flatMap((img) => [img, img])
                       .map((img, idx) => (
@@ -268,11 +268,11 @@ const cartItem = selectedProduct
           </div>
           <div className="luxury-bottom pb-5 ">
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay,Navigation]}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={false}
               spaceBetween={30}
-              slidesPerView={4}
+              slidesPerView={5}
               breakpoints={{
                 320: { slidesPerView: 1 },
                 450: { slidesPerView: 1},
@@ -289,12 +289,12 @@ const cartItem = selectedProduct
                       <div className="img-content">
                         <img
                           className="w-100 front-img"
-                          src={`https://jelwo.onrender.com/uploads/${luxurie.frontImg}`}
+                          src={`${import.meta.env.VITE_API_IMAGE}/${luxurie.frontImg}`}
                           alt=""
                         />
                         <img
                           className="w-100 back-img"
-                          src={`https://jelwo.onrender.com/uploads/${luxurie.backImg}`}
+                          src={`${import.meta.env.VITE_API_IMAGE}/${luxurie.backImg}`}
                           alt=""
                         />
                         <div className="offer text-start">
@@ -332,10 +332,7 @@ const cartItem = selectedProduct
                         <Box sx={{ '& > legend': { mt: 2 } }}>
                           <Rating
                             name="simple-controlled"
-                            value={value[luxurie._id] || 0}
-                            onChange={(event, newValue) => {
-                               handleRating(luxurie._id, newValue)
-                            }}
+                            value={luxurie.rating} 
                           />
                         </Box>
                       </div>
@@ -346,7 +343,7 @@ const cartItem = selectedProduct
                           }}
                           className="btn-add w-100 mt-3"
                         >
-                          ADD TO CART
+                          Read More <i class="fa-solid fa-arrow-right"></i>
                         </button>
                       </div>
                     </div>
