@@ -1,5 +1,5 @@
 import React, { use, useState } from 'react'
-import './signup.css'
+import './Signup.css'
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import Alert from '@mui/material/Alert';
