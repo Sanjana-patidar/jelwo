@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://jelwo-ui.vercel.app", "http://localhost:5174/"],
+  origin: ["https://jelwo-ui.vercel.app", "http://localhost:5174"],
   credentials: true
 }));
 app.use(express.json());
