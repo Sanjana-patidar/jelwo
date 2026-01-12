@@ -12,7 +12,10 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["https://jelwo.vercel.app", "http://localhost:5174/"],
+  credentials: true
+}));
 app.use(express.json());
 
 // uploads folder static access
