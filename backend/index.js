@@ -24,6 +24,10 @@ app.use("/api/customers", customerRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/admin", adminRoutes);
 
+app.get('/ping', (req,res) => {
+  res.send('Pong');
+})
+
 // Database connection
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Atlas connected"))
