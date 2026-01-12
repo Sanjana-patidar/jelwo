@@ -3,7 +3,7 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./AdminProduct.css";
 
-const API = "https://jelwo.onrender.com/api/products";
+const API = `${import.meta.env.VITE_API_URL}/products`;
 
 const Addproduct = () => {
   const [form, setForm] = useState({

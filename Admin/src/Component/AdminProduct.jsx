@@ -3,7 +3,7 @@ import "./AdminProduct.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API = "https://jelwo.onrender.com/api/products";
+const API = `${import.meta.env.VITE_API_URL}/products`;
 
 const AdminProduct = () => {
   const [products, setProducts] = useState([]);
@@ -47,7 +47,7 @@ const AdminProduct = () => {
       <div className="product-grid">
         {products.map((p) => (
           <div className="product-card" key={p._id}>
-            <img src={`https://jelwo.onrender.com/uploads/${p.frontImg}`} />
+            <img src={`${import.meta.env.VITE_API_IMAGE}/${p.frontImg}`} />
 
             <h3>{p.title}</h3>
 

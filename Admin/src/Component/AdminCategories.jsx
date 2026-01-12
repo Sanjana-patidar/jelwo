@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const API = "https://jelwo.onrender.com/api/jewelry";
+const API = `${import.meta.env.VITE_API_URL}/jewelry`;
 
 const AdminCategories = () => {
   const [categorie, setCategories] = useState([]);

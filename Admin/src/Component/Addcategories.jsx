@@ -4,7 +4,7 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./AdminProduct.css";
 
-const API = "https://jelwo.onrender.com/api/jewelry";
+const API = `${import.meta.env.VITE_API_URL}/jewelry`;
 
 const Addcategories = () => {
     const [form, setForm] = useState({

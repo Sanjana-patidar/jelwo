@@ -16,9 +16,9 @@ const Dashboard = () => {
    useEffect(()=>{
     const fetchCounts = async () => {
       try {
-         const productscount = await axios.get("https://jelwo.onrender.com/api/products");
-         const categoriescount = await axios.get("https://jelwo.onrender.com/api/jewelry");
-         const userscount = await axios.get("https://jelwo.onrender.com/api/users");
+         const productscount = await axios.get(`${import.meta.env.VITE_API_URL}/products`);
+         const categoriescount = await axios.get(`${import.meta.env.VITE_API_URL}/jewelry`);
+         const userscount = await axios.get(`${import.meta.env.VITE_API_URL}/users`);
          setCounts({
           products: productscount.data.length,
           categories: categoriescount.data.length,
