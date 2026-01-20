@@ -212,7 +212,7 @@ const cartItem = selectedProduct
                     <span className="fw-bold fs-4">Color:</span>{" "}
                     <span>Gold</span>
                   </div>
-                   <div className="count-btn">
+                   {/* <div className="count-btn">
                     <button
                       className="counter"
                       onClick={() => cartItem && increaseQty(cartItem._id)}
@@ -230,16 +230,16 @@ const cartItem = selectedProduct
                     >
                       <i className="fa-solid fa-minus"></i>
                     </button>
-                  </div>
+                  </div> */}
                   <div className="add-buy mt-5 d-flex gap-4">
                     <div className="w-100">
                       <button className="w-100 add1" onClick={handleAdd} >
                         ADD TO CART
                       </button>
                     </div>
-                    <div className="w-100">
+                    {/* <div className="w-100">
                         <button onClick={() => selectedProduct && handleBuyNow(selectedProduct)} className="w-100 add">BUY IT NOW</button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

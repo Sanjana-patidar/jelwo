@@ -1,10 +1,18 @@
 import React from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useCart } from "./Context/CartContext";
+import { useBuynow } from './Context/BuynowContext';
 const Cartoffacnvas = () => {
+  const {addBuyNow} = useBuynow();
   const { cart, showCart, closeCart, removeFromCart,totalQty } = useCart();
-
+  const navigate = useNavigate();
+const handleBuyNow = () => {
+  addBuyNow(cart);     // 👈 poora cart bhejo
+  closeCart();         // offcanvas band
+  navigate("/buynow"); // redirect
+};
   return (
     <>
       <Offcanvas
@@ -92,14 +100,16 @@ const Cartoffacnvas = () => {
                   Taxes, discounts and shipping calculated at checkout.
                 </span>
               </div>
-              <div className=" gap-3  mt-4 d-block d-sm-flex ">
+              <div className="w-100">
+                <button onClick={handleBuyNow} className="w-100 add">
+                  BUY IT NOW
+              </button>
+              </div>
+               {/* <div className=" gap-3  mt-4 d-block d-sm-flex ">
                 <button className="w-100 mb-2 mb-sm-0 p-2 rounded-5 bg-danger text-white ">
                   VIEW CART
                 </button>
-                <button className="w-100 p-2 rounded-5 bg-secondary text-white">
-                  <Link to='/buynow' className="text-decoration-none"> CHECKOUT</Link>
-                </button>
-              </div>
+              </div>  */}
             </div>
            </>
            )

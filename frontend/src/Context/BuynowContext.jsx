@@ -5,9 +5,9 @@ const BuynowContext = createContext();
 export const BuynowProvider = ({children}) =>{
 
     const [selectedBuy, setSelectedBuy] = useState([]);
-  const addBuyNow = (item) =>{
-    setSelectedBuy((prev)=> [...prev, item]);
-  }
+  const addBuyNow = (items) => {
+  setSelectedBuy(items); // direct cart set
+};
 
    const clearBuyNowItems = () =>setSelectedBuy([]);
     return(

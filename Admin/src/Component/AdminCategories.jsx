@@ -60,7 +60,7 @@ const AdminCategories = () => {
             <div>
               <img
                 className="w-100 border rounded-5 bg-white"
-                src={`https://jelwo.onrender.com/uploads/${cat.image}`}
+                src={`${import.meta.env.VITE_API_IMAGE}/${cat.image}`}
                 alt={cat.name}
               />
             </div>

@@ -857,7 +857,7 @@ const handleBuyNow = (item) => {
                                         <span>Gold</span>
                                       </div>
 
-                                      <div className="count-btn">
+                                      {/* <div className="count-btn">
                                         <button
                                           className="counter"
                                           onClick={increment}
@@ -873,7 +873,7 @@ const handleBuyNow = (item) => {
                                         >
                                           <i className="fa-solid fa-minus"></i>
                                         </button>
-                                      </div>
+                                      </div> */}
 
                                       <div className="add-buy mt-5 d-flex gap-4">
                                         <div className="w-100">
@@ -881,12 +881,12 @@ const handleBuyNow = (item) => {
                                             ADD TO CART
                                           </button>
                                         </div>
-                                        <div className="w-100">
+                                        {/* <div className="w-100">
                                             <Link to='/buynow'><button onClick={() => selectedProduct && handleBuyNow(selectedProduct)} className="w-100 add">
                                               BUY IT NOW
                                             </button></Link>
                                            
-                                        </div>
+                                        </div> */}
                                       </div>
                                     </div>
                                   </div>

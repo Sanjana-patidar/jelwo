@@ -4,9 +4,11 @@ import GridViewIcon from "@mui/icons-material/GridView";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import CategoryIcon from "@mui/icons-material/Category";
 import HomeIcon from "@mui/icons-material/Home";
+import LockIcon from '@mui/icons-material/Lock';
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 import "./Admin.css";
+import { LayoutGroup } from "framer-motion";
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -75,6 +77,19 @@ const Sidebar = () => {
             {" "}
             <GroupAddIcon className="icon" /> Users
           </NavLink>
+          
+        </li>
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "active-link " : "text-decoration-none"
+            }
+          >
+            {" "}
+            <LockIcon className="icon" /> Logout
+          </NavLink>
+          
         </li>
       </ul>
     </div>

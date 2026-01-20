@@ -11,6 +11,7 @@ import Badge from '@mui/material/Badge';
 import { useBuynow } from '../Context/BuynowContext';
 const Buynow = () => {
     const {selectedBuy, clearBuyNowItems} = useBuynow();
+    const buyItems = Array.isArray(selectedBuy) ? selectedBuy : [];
     //state for collapse
      const [open, setOpen] = useState(false);
     // state for radio input
@@ -206,9 +207,9 @@ const Buynow = () => {
            <div className="col-12 col-md-6 total-card ">
                <div className='total-section p-2 p-md-5 '>
                  <div className=" buynow-card ">
-                    {selectedBuy.length === 0 ? ( <h5 className='text-primary'>No product add</h5>):(
-                        selectedBuy.map((item, index) =>(
-                        <div key={item._id || index} className='d-flex gap-3 flex-wrap'>
+                    {buyItems.length === 0 ? ( <h5 className='text-primary'>No product add</h5>):(
+                        buyItems.map((item) =>(
+                        <div key={item._id } className='d-flex gap-3 flex-wrap'>
                             <div className='d-flex gap-3 flex-wrap'>
                                 <div>
                                 <img src={`${import.meta.env.VITE_API_IMAGE}/${item.frontImg}`} alt="" className='w-100 rounded img-2' />

@@ -1,71 +1,70 @@
-import React from 'react'
-import axios from 'axios';
-import { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
-import './Adminlogin.css';
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./Adminlogin.css";
+
 const Adminlogin = () => {
-   const [email, setEmail]= useState("");
-    const [password, setPassword]= useState("");
-    const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-     // admin login function
-     const submit = async (e) => {
-  e.preventDefault();
+  const submit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_URL}/admin/login`,
+        { email, password }
+      );
 
-  try {
-    const res = await axios.post(`${import.meta.env.VITE_API_URL}/admin/login`, {
-      email,
-      password,
-    });
-
-    if (res.data.msg === "Login success") {
-      alert("Admin Login Successful");
-      navigate("/admin");
+      if (res.data.msg === "Login success") {
+        alert("Admin Login Successful");
+        navigate("/admin");
+      }
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.msg);
+      } else {
+        alert("Server error");
+      }
     }
-
-  } catch (error) {
-    // axios catches 400, so handle here
-    if (error.response) {
-      alert(error.response.data.msg); 
-      
-    } else {
-      alert("Server error");
-    }
-  }
-};
+  };
 
   return (
-    <div className="container-1">
-      <div className='login-container'>
-      <form onSubmit={submit} >
-        <div>
-          <h5> Admin Login</h5>
-        </div>
-         <div className='admin-field'>
-            <input 
-            type="text" 
-            placeholder=' Enter email '
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-             />
-         </div>
-         <div className='admin-field mt-3'>
-            <input 
-            type="password"
-            placeholder='Enter password ' 
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            />
-         </div>
-        <div className=' mt-4'>
-             <button type="submit" class="btn btn-danger"> <i class="fa-solid fa-lock"></i> Login</button>
-        </div>
-       </form>
-    </div>
-    </div>
-  )
-}
+    <div className="admin-login-wrapper">
+      <div className="admin-login-card">
+        <h4 className="login-title">Jelwo Admin</h4>
+        <p className="login-subtitle">Sign in to manage your store</p>
 
-export default Adminlogin
+        <form onSubmit={submit}>
+          <div className="admin-field">
+            <i className="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              placeholder="Admin Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="admin-field">
+            <i className="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <button type="submit" className="login-btn">
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Adminlogin;
